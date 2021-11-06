@@ -7,12 +7,11 @@ phases:
     commands:
         - python --version
         - yum update -y
+        - python3.9 -m pip install --upgrade pip
         - pip3 install Flask
   build:
     commands:
       - echo Build started on `date`
-      - export AWS_ACCESS_KEY=AKIAXRXSVCDYRP6RGSPK
-      - export AWS_SECRET_ACCESS_KEY=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
       - echo Compiling the Python code...
       - python test_app.py
   post_build:
