@@ -6,6 +6,7 @@ phases:
   install:
     commands:
         - echo "install phase  "
+        - apt-get install pip3
         - pip3 install flask
   build:
     commands:
