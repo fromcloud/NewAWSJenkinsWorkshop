@@ -5,7 +5,8 @@ env:
 phases:
   install:
     commands:
-        - echo "install phase  "
+        - echo "---------------------------------------------------------------------------------------------------"
+        - python --version
         - yum update -y
         - pip3 install Flask
   build:
