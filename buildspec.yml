@@ -3,6 +3,7 @@ run-as: root
 phases:
   install:
     commands:
+        - echo "install phase"
         - yum install pip -y
         - python -m pip install Flask
   build:
