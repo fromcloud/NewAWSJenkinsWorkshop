@@ -8,8 +8,8 @@ phases:
         - echo "install phase  "
         - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
         - apt-get update -y
-        - apt-get install pip -y
-        - pip install flask
+        - apt-get install python3-pip
+        - pip3 install flask
   build:
     commands:
       - echo Build started on `date`
