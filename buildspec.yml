@@ -3,7 +3,7 @@ run-as: root
 phases:
   install:
     commands:
-        - echo "install phase "
+        - echo "install phase  "
   build:
     commands:
       - echo Build started on `date`
