@@ -1,9 +1,10 @@
 version: 0.2
-
+run-as: root
 phases:
   install:
     commands:
-        - sudo /usr/bin/yum install pip -y && python -m pip install Flask
+        - yum install pip -y
+        - python -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
