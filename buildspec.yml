@@ -6,7 +6,9 @@ phases:
   install:
     commands:
         - echo "install phase  "
-        - apt-get install pip
+        - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+        - apt-get update -y
+        - apt-get install pip -y
         - pip install flask
   build:
     commands:
