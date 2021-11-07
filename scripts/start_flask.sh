@@ -1,1 +1,1 @@
-python /web/web.py > /dev/null 2>&1 &
+sudo python3.7 /web/web.py > /dev/null 2>&1 &

@@ -1,1 +1,1 @@
-python /web/scripts/stop_flask.py
+sudo python3.7 /web/scripts/stop_flask.py
