@@ -7,12 +7,12 @@ hooks:
   AfterInstall:
     - location: scripts/mkdir.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
   ApplicationStart:
     - location: scripts/start_flask.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
   ApplicationStop:
     - location: scripts/stop_flask1.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
