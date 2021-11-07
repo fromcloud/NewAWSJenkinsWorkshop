@@ -16,6 +16,3 @@ hooks:
     - location: scripts/start_flask.sh
       timeout: 300
       runas: ec2-user
-
-  
-  
