@@ -12,5 +12,10 @@ hooks:
     - location: scripts/start_flask.sh
       timeout: 300
       runas: ec2-user
+  ApplicationStop:
+    - location: scripts/stop_flask1.sh
+      timeout: 300
+      runas: ec2-user
 
 
+      
