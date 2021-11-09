@@ -4,6 +4,8 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
 
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
@@ -14,6 +16,8 @@ def shutdown_server():
 
 myapp = Flask(__name__)
 
+xray_recorder.configure(service='my_first_application')
+XRayMiddleware(myapp, xray_recorder)
 
 @myapp.route('/shutdown', methods=['POST'])
 def shutdown():
